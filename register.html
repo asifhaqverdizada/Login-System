@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+   #registration-form{
+    padding: 16px;
+    background-color: white;
+ }
+input[type=text], input[type=password]{
+  width: 350px;
+  padding: 15px;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=email]{
+    width: 350px;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;  
+}
+input[type=checkbox]{
+    margin-left: 50px;
+    margin-right: 25px; 
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=checkbox]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+ button {
+  background-color: #04AA6D;
+  margin-left: 50px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  opacity: 1;
+}
+a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.9;
+    text-decoration: none;
+    margin-left: 50px;
+}
+</style>
+<body>
+  <form>
+    <input type="text" id="firstName" placeholder="First Name"><br>
+    <input type="text" id="lastName" placeholder="Last Name"><br>
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <input type="checkbox" id="terms">
+    <label for="terms">Butun sertleri qebul edirem</label><br>
+    <h2>Cinsinizi qeyd edin:</h2>
+    <input type="radio" name="radioOption" value="Male"> Male<br>
+    <input type="radio" name="radioOption" value="Female">Female<br>
+    <button type="button" id="register-button" onclick="registerUser()">Register</button><br>
+  </form>
+<a href="login.html">Logine get</a>
+    <script src="script.js"></script>
+</body>
+</html>

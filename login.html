@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+button{
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 500px;
+        opacity: 0.9;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    button:hover{
+        opacity: 1;
+    }
+    input[type=email]{
+       width: 350px;
+       padding: 15px;
+       margin-left: 50px;
+       margin-top: 15px;
+       margin-bottom: 30px;
+       display: inline-block;
+       border: none;
+      background: #f1f1f1;  
+   }
+   input[type=password]{
+     width: 350px;
+     padding: 15px;
+     margin-left: 50px;
+     margin-top: 15px;
+     margin-bottom: 30px;
+     display: inline-block;
+     border: none;
+     background: #f1f1f1;
+    }
+    input[type=password]:focus,input[type=email]:focus {
+     background-color: #ddd;
+     outline: none;
+    }
+    a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.9;
+    text-decoration: none;
+    margin-left: 50px;
+   }
+</style>
+<body>
+    <form>
+        <input type="email" id="loginEmail" placeholder="Email"><br>
+        <input type="password" id="loginPassword" placeholder="Password"><br>
+        <button type="button" onclick="login()">Login</button><br>
+    </form>
+    <a href="register.html">Qeydiyyatdan kec</a>
+    <script src="script.js"></script>
+</body>
+</html>
